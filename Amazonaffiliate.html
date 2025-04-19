@@ -10,12 +10,21 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      background-image: url('https://via.placeholder.com/1920x1080'); /* Background Image */
+      background-size: cover;
+      background-position: center;
     }
     header {
-      background-color: #232f3e;
+      background-color: rgba(35, 47, 62, 0.8); /* Semi-transparent background */
       color: white;
       padding: 1.5rem;
       text-align: center;
+      background-image: url('https://via.placeholder.com/1920x400'); /* Header Image */
+      background-size: cover;
+      background-position: center;
+    }
+    header h1 {
+      margin: 0;
     }
     .container {
       padding: 2rem;
@@ -33,6 +42,14 @@
       padding: 1rem;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
+      transition: transform 0.3s, background-color 0.3s;
+      background-image: url('https://via.placeholder.com/250x150'); /* Soft background for product */
+      background-size: cover;
+      background-position: center;
+    }
+    .product:hover {
+      transform: scale(1.05);
+      background-color: rgba(241, 241, 241, 0.9); /* Slight overlay when hovered */
     }
     .product img {
       max-width: 100%;
@@ -42,6 +59,16 @@
     .product h3 {
       margin: 0.5rem 0;
       font-size: 1.1rem;
+    }
+    .product p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .rating {
+      margin: 1rem 0;
+    }
+    .stars {
+      color: gold;
     }
     .product a {
       display: inline-block;
@@ -58,35 +85,119 @@
       color: #555;
       padding: 2rem 1rem;
     }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .carousel-item {
+      min-width: 100%;
+      transition: transform 0.5s ease;
+    }
+    .carousel img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Leo's Picks</h1>
-    <p>Curated Deals from Amazon Just for you!</p>
+    <p>Curated Deals from Amazon Just for You!</p>
   </header>
 
   <div class="container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1000x300" alt="Carousel Image 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1000x300" alt="Carousel Image 2" />
+      </div>
+    </div>
+
     <div class="product-grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/250x150" alt="Product 1" />
-        <h3>Product Title 1</h3>
-        <p>Short description of product 1.</p>
-        <a href="https://www.amazon.com/dp/B000000000" target="_blank">Buy on Amazon</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/250x150" alt="Product 2" />
-        <h3>Product Title 2</h3>
-        <p>Short description of product 2.</p>
-        <a href="https://www.amazon.com/dp/B000000001" target="_blank">Buy on Amazon</a>
-      </div>
-
-      <div class="product">
-        <img src="https://via.placeholder.com/250x150" alt="Product 3" />
-        <h3>Product Title 3</h3>
-        <p>Short description of product 3.</p>
-        <a href="https://www.amazon.com/dp/B000000002" target="_blank">Buy on Amazon</a>
+      
+<div class="product">
+        <img src="https://m.media-amazon.com/images/I/81n9FBMKv1L.jpg" alt="Softlips classic flavors lip berry" />
+        <h3>Softlips classic flavors lip berry</h3>
+        <p>Includes cherry, vanilla and raspberry flavors</p>
+        <a href="https://www.amazon.com/dp/B07SH1B864?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/71U3kknVjTL.jpg" alt="Nabisco Nilla Wafers - 2/15 oz." />
+        <h3>Nabisco Nilla Wafers - 2/15 oz.</h3>
+        <p>The package dimension of the product is 11.4"L x 7.4"W x 4.9"H</p>
+        <a href="https://www.amazon.com/dp/B001G26NJ8?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/41kt4u6h6sL.jpg" alt="Puffs Plus Lotion Facial Tissues, 8 Family Boxes, 124 Facial Tissues per Box, Allergies and Colds" />
+        <h3>Puffs Plus Lotion Facial Tissues, 8 Family Boxes, 124 Facial Tissues per Box, Allergies and Colds</h3>
+        <p>Pack includes 8 Family Boxes (124 Tissues Per Box) of Puffs Plus Lotion Facial Tissues</p>
+        <a href="https://www.amazon.com/dp/B09YKRZR22?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/61cXVqJomEL.jpg" alt="Suntouchable Whoa Glow SPF 30 Mini" />
+        <h3>Suntouchable Whoa Glow SPF 30 Mini</h3>
+        <p>LIGHTWEIGHT SUNSCREEN & MAKEUP PRIMER: Prime, protect, and glow. This lightweight face sunscreen and primer hybrid deliv</p>
+        <a href="https://www.amazon.com/dp/B0CMVV9817?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/41+f+cRPwaL.jpg" alt="King Arthur Organic Masa Harina: Premium Corn Flour for Authentic Tortillas & Tamales - Non-GMO, Gluten-Free, Finely Ground White Corn Meal - American-Grown, Traditional Process - 2 lbs" />
+        <h3>King Arthur Organic Masa Harina: Premium Corn Flour for Authentic Tortillas & Tamales - Non-GMO, Gluten-Free, Finely Ground White Corn Meal - American-Grown, Traditional Process - 2 lbs</h3>
+        <p>Authentic Ingredients: Made from 100% organic, American-grown white corn, our masa harina organic corn flour delivers ex</p>
+        <a href="https://www.amazon.com/dp/B096CRH8GS?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/71MT8DNnqfL.jpg" alt="CRC Food Grade Silicone Lubricant, (Net Weight: 10 oz) 16oz Aerosol" />
+        <h3>CRC Food Grade Silicone Lubricant, (Net Weight: 10 oz) 16oz Aerosol</h3>
+        <p>CRC INDUSTRIES: A market leader that offers impeccably designed chemical solutions to maintain, protect and repair diffe</p>
+        <a href="https://www.amazon.com/dp/B00192D0TQ?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/81JvXkulDKL.jpg" alt="Vicks Babyrub Soothing Ointment, 1.76 Ounce" />
+        <h3>Vicks Babyrub Soothing Ointment, 1.76 Ounce</h3>
+        <p>GENTLE FORMULA. Vicks BabyRub contains petrolatum and aloe to leave your baby’s skin feeling soft</p>
+        <a href="https://www.amazon.com/dp/B01IQCBJWG?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/41dbRyMVvlL.jpg" alt="Zep ZUOVGR19 Heavy-Duty Oven and Grill Cleaner 19 Ounces" />
+        <h3>Zep ZUOVGR19 Heavy-Duty Oven and Grill Cleaner 19 Ounces</h3>
+        <p>Removes carbon deposits, greasy wastes and baked-on foods</p>
+        <a href="https://www.amazon.com/dp/B005CZY6T4?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/81VniTtxYhL.jpg" alt="Kataifi for Dubai Chocolate Bar Pistachio | Baked Kadayif | Ready to Use, 7.1 oz (200g)" />
+        <h3>Kataifi for Dubai Chocolate Bar Pistachio | Baked Kadayif | Ready to Use, 7.1 oz (200g)</h3>
+        <p>Premium Quality Kataifi Shredded Fillo Dough: Kataifi is a cherished pastry in Middle Eastern and Mediterranean cuisines</p>
+        <a href="https://www.amazon.com/dp/B0DSQT1L37?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/815qw-PU4HL.jpg" alt="Cascade Complete Powder Dishwasher Detergent, Fresh Scent, 75 oz, White" />
+        <h3>Cascade Complete Powder Dishwasher Detergent, Fresh Scent, 75 oz, White</h3>
+        <p>Cleans 24-hour stuck on food.</p>
+        <a href="https://www.amazon.com/dp/B000VCFBFG?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/71G8YIh90fL.jpg" alt="Dentemp Repair Kit - Repair-It Advanced Formula Denture Repair Kit - Denture Repair Kit Repairs Broken Dentures - Denture Repair to Mend Cracks & Replace Loose Teeth" />
+        <h3>Dentemp Repair Kit - Repair-It Advanced Formula Denture Repair Kit - Denture Repair Kit Repairs Broken Dentures - Denture Repair to Mend Cracks & Replace Loose Teeth</h3>
+        <p>Safe & Easy to use, any place</p>
+        <a href="https://www.amazon.com/dp/B000GGHS62?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/71-99nqyETL.jpg" alt="King Arthur Flour - Unbleached 100% Organic Bread Flour - 5 lbs" />
+        <h3>King Arthur Flour - Unbleached 100% Organic Bread Flour - 5 lbs</h3>
+        <p>King Arthur</p>
+        <a href="https://www.amazon.com/dp/B008230RN2?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/61loD3VnsqS.jpg" alt="General Hydroponics pH Down Liquid Fertilizer, 1-Quart" />
+        <h3>General Hydroponics pH Down Liquid Fertilizer, 1-Quart</h3>
+        <p>Acid formulation uses food grade phosphoric acid</p>
+        <a href="https://www.amazon.com/dp/B00CJID1I4?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/91oYTZzNFnL.jpg" alt="Blue Lotus Chai - Traditional Masala Chai - Makes 100 Cups - 3 Ounce Masala Spiced Chai Powder with Organic Spices - Instant Indian Tea No Steeping - No Gluten" />
+        <h3>Blue Lotus Chai - Traditional Masala Chai - Makes 100 Cups - 3 Ounce Masala Spiced Chai Powder with Organic Spices - Instant Indian Tea No Steeping - No Gluten</h3>
+        <p>Winner of 2019 Silver Sofi Award, Tea Category! - The delightful and authentic taste of Blue Lotus Chai will have you fa</p>
+        <a href="https://www.amazon.com/dp/B0049K99RW?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/711sHTNvQpL.jpg" alt="Hosa Caig Deoxit Contact Cleaner 5% Spray 5 Oz" />
+        <h3>Hosa Caig Deoxit Contact Cleaner 5% Spray 5 Oz</h3>
+        <p>Contact Cleaner and Rejuvenator</p>
+        <a href="https://www.amazon.com/dp/B0002BBV4G?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
+      </div><div class="product">
+        <img src="https://m.media-amazon.com/images/I/51Gtx6LgrfL.jpg" alt="Royal Dansk Danish Butter Cookies, 24 Oz. (1.5 Lb) 681 Grams" />
+        <h3>Royal Dansk Danish Butter Cookies, 24 Oz. (1.5 Lb) 681 Grams</h3>
+        <p>CRISP, BUTTERY COOKIE CLASSICS: Discover a selection of rich Danish butter cookies inside this 24-ounce tin – all with p</p>
+        <a href="https://www.amazon.com/dp/B00XM5KSV6?th=1&linkCode=ll1&tag=tls0c5-20&linkId=f68e0006a2dcfe37e5ba51ad028fdbcb&language=en_US&ref_=as_li_ss_tl" target="_blank">Buy on Amazon</a>
       </div>
     </div>
   </div>
@@ -95,5 +206,17 @@
     <p>As an Amazon Associate, I earn from qualifying purchases.</p>
     <p>&copy; 2025 Leo's Picks. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Carousel functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * 100}%)`;
+    }, 3000); // Change slide every 3 seconds
+  </script>
 </body>
 </html>
